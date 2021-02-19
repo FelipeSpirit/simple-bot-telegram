@@ -18,7 +18,7 @@ export abstract class Bot{
         this.emitter = new EventEmitter();
         this.commands = [];
 
-        this.bot.onText(/^\/st_/, (message:Message)=>{
+        this.bot.onText(new RegExp(this.prefix), (message:Message)=>{
           if (!message.text.startsWith(this.prefix)) return;
           if (message.from.is_bot) return;
           message.response = this.bot;

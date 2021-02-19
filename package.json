@@ -5,7 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "start": "node dist/bundle.js",
-    "test": "tsc-watch --project tsconfig.json --onSuccess \"node dist/bundle.js\""
+    "test": "tsc-watch --project tsconfig.json --onSuccess \"node dist/test.js\""
   },
   "keywords": [
     "Bot",
