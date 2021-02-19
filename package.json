@@ -1,0 +1,26 @@
+{
+  "name": "@felipespirit/simple-bot-telegram",
+  "version": "1.0.0",
+  "description": "Customizable Telegram bot",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "node dist/bundle.js",
+    "test": "tsc-watch --project tsconfig.json --onSuccess \"node dist/bundle.js\""
+  },
+  "keywords": [
+    "Bot",
+    "Telegram"
+  ],
+  "author": "FelipeSpirit",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "dts-bundle": "^0.7.3",
+    "reflect-metadata": "^0.1.13",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.51.0"
+  }
+}
